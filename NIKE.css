@@ -1,0 +1,398 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebebeb;
+  }
+  .navigation{
+    width: 100%;
+    padding: 10px 16px;
+    
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+/* ------------------------------------------- section 1 -----------------------------------*/
+  .navigation  > .header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .navigation > .header-nav > #logo{
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+ .navigation > .header-nav > .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    list-style-type: none;
+  }
+  .header-nav>  .menu > li > a{
+    font-weight: bold;
+    display: block;
+  }
+  .header-nav >  .menu > li:hover a{
+     color: rgb(101, 101, 101);
+     transform: scale(130%);
+  }
+  .header-nav > .icon_bar {
+    display: none;
+  }
+
+  @media screen and (max-width: 767px){
+    .navigation {
+      padding: 0;
+      padding: 20px 0px;
+    }
+    .navigation > .header-nav{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .navigation > .header-nav> #logo {
+      width: 60%;
+    }
+   .navigation  >.header-nav >  .menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+         }
+         .header-nav >  .menu > li{
+         padding: 8px;
+         border-bottom: 1px solid rgba(128, 128, 128, 0.599);
+        text-align: center;
+         width: 100%;
+         }
+         .header-nav > #logo {
+          margin-left: 20px;
+         }
+    .header-nav > .icon_bar {
+      display: flex;
+      margin-right: 20px;
+    }
+    .header-nav > .icon_bar > i{
+      font-size: 40px;
+    }
+  }
+
+/* -------------------------------------- home nav --------------------------------- */
+  .home-nav{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  .home-left{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .home-left >  h2{
+    letter-spacing: 2px ;
+  }
+
+  .home-left h3{
+    letter-spacing: 2px ;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+
+  .home-left p{
+    letter-spacing: 2px ;
+    font-size: 2rem;
+    margin-top: 2rem;
+    
+  }
+
+  .home-right img{
+    max-width: 500px;
+  }
+
+   .home-left button{
+    color: aliceblue;
+    background-color: black;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+
+  .home-left button:hover{
+     background-color: white;
+     color: black;
+     transition: 0.4s;
+     transform: scale(1.1);
+     background-color:#aeaeae ;
+  }
+  
+  @media screen and (max-width : 1207px){
+    .home-nav {
+      padding-left: 10px;
+      height: auto;
+      
+    }
+    .home-left p{
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width : 1023px){
+    .home-right img{
+      max-width: 400px;
+    }
+  }
+ @media screen and (max-width : 767px){
+     .home-nav {
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+     }
+     .home-nav > .home-left{
+          width: 100%;
+     }
+     .home-right img{
+      max-width: 300px;
+    }
+ }
+/* ------------------------------------------------- section 2 ------------------------------------- */
+/*-------------------------------------------------- H1 and H2 ---------------------------------------------------- */
+  #title-section{
+    letter-spacing: 2px ;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #sub-title-section{
+    letter-spacing: 2px ;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  /*--------------------------------------------------  NIKE ------------------------------------- */
+  .box {
+    width: 100%;
+    margin-top: 96px;
+    padding: 10px;
+  }
+  .box > .subbox {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+  }
+  .card-NIKE{
+    width: 33%;
+    height: 500px;
+    margin: 35px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+   
+  }
+
+  .card-NIKE img{
+    width: 80%;
+    height: 90%;
+    object-position: center;
+    object-fit: cover;
+  
+    box-shadow: 0px 5px 10px rgb(128, 142, 142);
+  }
+
+  .card-NIKE button{
+    color: aliceblue;
+    background-color: black;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    height: 10%;
+    width: 120px;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+
+  .card-NIKE button:hover{
+    color: rgb(255, 255, 255);
+    transition: all 0.4s;
+    transform: scale(1.1);
+    background-color:rgb(117, 117, 117) ;
+    font-weight: bold;
+  }
+
+  .card-NIKE:hover{
+    transition: 0.5s;
+    transform: translatey(-20px);
+    /* cursor: pointer;  = dor dai*/
+    cursor: pointer;
+   
+  }
+
+  .card-NIKE span{
+    font-weight: bold;
+    font-size: 2rem;
+   height: 10%;
+  }
+
+  .card-NIKE > p:nth-child(2){
+    font-size: 20px;
+    width: 80%;
+    font-weight: bold;
+    /* margin-top: 0.5rem; */
+  }.card-NIKE > p:nth-child(3){
+    font-size: 18px;
+   
+  }.card-NIKE > p:nth-child(3) > span{
+    font-size: 18px;
+  }
+
+  /*  make responsive screen 768px */
+  @media  screen and (max-width : 767px){
+    .box > .subbox {
+      margin: auto;
+      justify-content: start;
+      gap: 0.5%;
+    }
+    .box > .subbox > .card-NIKE {
+           width: 49%;
+            } 
+            .box > .subbox > .card-NIKE:nth-child(odd){
+              margin-left:1%;
+              
+            }
+            .box > .subbox > .card-NIKE > img{
+              width: 100%;
+             
+            }
+  }
+   /*  make responsive screen 540px */
+   @media  screen and (max-width : 540px){
+    .box {
+      padding: 0;
+      width: 100%;
+      margin-left: 0;
+    }
+    .box > .subbox {
+
+      width: 100%;
+      gap: 10px;
+      margin-left: 0;
+      gap: 20;
+      flex-direction: column;
+    }
+    .box > .subbox > .card-NIKE {
+           width: 100%;
+           margin: 0;
+           padding: 0;
+           margin-top: 50px;
+           margin-left: 0;
+           
+            } 
+            .card-NIKE > p:nth-child(2){
+              font-size: 16px;
+            }.card-NIKE > p:nth-child(3){
+              font-size: 13px;
+             
+            }.card-NIKE > p:nth-child(3) > span{
+              font-size: 13px;
+            }
+            .box > .subbox > .card-NIKE:nth-child(odd){
+              margin-left:0;
+            }
+    
+  }
+ 
+/* ------------------------ footer ----------------------------------- */
+
+footer{
+  background: #111;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: white;
+
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content > h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content > p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+ .socials  li{
+   margin: 0 10px;
+ }
+ .socials  a{
+  text-decoration: none;
+  color: white;
+ }
+ .socials > a > i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+ }
+ .socials a:hover i{
+   color: rgb(177, 18, 18); 
+ }
+ .footer-button{
+  background:#000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+ }
+ .footer-button p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+ }
+ .footer-button span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+ }
